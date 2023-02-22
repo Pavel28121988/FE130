@@ -1,0 +1,246 @@
+/* .block3 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-lightblue);
+}
+
+.block3__box {
+    padding-bottom: 192px; 
+}
+
+.block3__text {
+    padding-top: 106px;
+    padding-bottom: 131px;
+
+}
+
+.block3__textheader {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.block3__textbold {
+    font-size: 56px;
+    font-weight: 700;
+    padding-top: 24px;
+}
+
+.block3__textend {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.block3__textbold,
+.block3__textend,
+.block3__textheader {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.block3__box {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.block3__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 33px;
+    border-radius: 7px;
+    background-color: var(--color-white);
+    width: 262px;
+}
+
+.block3__cardText {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 22px;
+}
+
+.block3__card:hover {
+    background-color: var(--color-blue);
+    cursor: pointer;
+}
+*/
+
+
+/* GRID модель */
+
+.block3 {
+    background-color: var(--color-lightblue);
+
+    display: grid;
+    grid-template-areas:
+        "block3__textheader block3__textheader block3__textheader block3__textheader"
+        "block3__textbold block3__textbold block3__textbold block3__textbold"
+        "block3__textend block3__textend block3__textend block3__textend"
+        "block3__card1 block3__card2 block3__card3 block3__card4";
+
+    grid-template-rows: 100px 160px 100px 550px;
+    align-items: center;
+    justify-items: center;
+}
+
+.block3__card{ max-height: 350px;
+
+}
+
+.block3__textheader {
+    grid-area: block3__textheader;
+}
+
+.block3__textbold {
+    grid-area: block3__textbold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block3__textend {
+    grid-area: block3__textend;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.block3__card1 {
+    grid-area: block3__card1;
+}
+
+.block3__card2 {
+    grid-area: block3__card2;
+}
+
+.block3__card3 {
+    grid-area: block3__card3;
+}
+
+.block3__card4 {
+    grid-area: block3__card4;
+}
+
+
+.block3__textheader {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.block3__textbold {
+    font-size: 56px;
+    font-weight: 700;
+
+}
+
+.block3__textend {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.block3__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 33px;
+    border-radius: 7px;
+    background-color: var(--color-white);
+    width: 262px;
+}
+
+.block3__cardText {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 22px;
+}
+
+.block3__card:hover {
+    background-color: var(--color-blue);
+    cursor: pointer;
+}
+
+/* АДАПТАЦИЯ ДЛЯ ГРИД МОДЕЛИ */
+@media(max-width:1200px) {.block3 {
+
+    grid-template-areas:
+        "block3__textheader block3__textheader "
+        "block3__textbold block3__textbold "
+        "block3__textend block3__textend "
+        "block3__card1 block3__card2"
+        "block3__card3 block3__card4";
+
+        grid-template-rows: 100px 160px 100px 550px 550px;
+}
+}
+
+@media(max-width:630px) {.block3 {
+
+    grid-template-areas:
+        "block3__textheader block3__textheader "
+        "block3__textbold block3__textbold "
+        "block3__textend block3__textend "
+        "block3__card1 block3__card1"
+        "block3__card2 block3__card2"
+        "block3__card3 block3__card3"
+        "block3__card4 block3__card4";
+
+        grid-template-rows: 100px 160px 100px 400px 400px 400px 400px;
+}
+}
+
+
+
+
+/* АДАПТАЦИЯ ДЛЯ ФЛЕКС МОДЕЛИ*/
+@media(max-width:1280px) {
+    .block3__box {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+@media(max-width:1280px) {
+    .block3__card {
+        padding: 16px;
+        margin-top: 16px;
+    }
+}
+
+@media(max-width:1000px) {
+    .block3__text {
+        padding: 16px;
+    }
+
+    .block3__textheader {
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    .block3__textbold {
+        font-size: 56px;
+        align-items: center;
+    }
+
+    .block3__textend {
+        font-size: 24px;
+        font-weight: 400;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    .block3__textbold {
+        font-size: 35px;
+        align-items: center;
+    }
+
+    .block3__textend {
+        font-size: 20px;
+    }
+}

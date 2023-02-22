@@ -1,0 +1,11 @@
+.bottonBlue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 48px;
+    background-color: var(--color-blue);
+    font-weight: 700;
+    color: var(--color-white);
+    font-size: 20px;
+}

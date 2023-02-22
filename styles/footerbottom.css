@@ -1,0 +1,27 @@
+.footerbottom{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 132px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+.footerbottom__link{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 60%;
+
+}
+
+.footerbottom__ikon{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+@media(max-width:650px) {
+    .footerbottom{
+        padding: 30px;
+    }
+}

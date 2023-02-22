@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logoTextHeader{
+    font-weight: bold;
+}
+
+.logoTextMain{
+    font-weight: 500;
+    opacity: 60%;
+}
+
+@media(max-width:650px) 
+    .logo {
+        justify-content: center;
+    }

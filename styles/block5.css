@@ -1,0 +1,118 @@
+.block5 {
+   display: flex;
+   background-color: var(--color-lightgray);
+   padding-left: 224px;
+}
+
+.block5__img {
+   padding-top: 73px;
+   padding-bottom: 72px;
+}
+
+.block5__text {
+
+
+
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-left: 122px;
+   padding-top: 106px;
+   padding-bottom: 137px;
+}
+
+
+.block5__boxTextHeader {
+   font-size: 40px;
+   font-weight: 700;
+}
+ 
+/* Анимация */
+
+.block5__img{
+animation: Anim5 10s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+.block5__img:hover{
+animation: none;
+}
+
+@keyframes Anim5 {
+60% { transform: rotate(180deg)}
+}
+
+.block5__boxTextMain {
+   font-size: 22px;
+   font-weight: 400;
+}
+
+.block5__boxInput {
+   display: flex;
+}
+
+.block5__boxInputBox {
+   width: 376px;
+   height: 48px;
+   margin-right: 10px;
+   font-size: 18px;
+   font-weight: 400;
+   border: 1px solid rgba(43, 41, 45, 0.2);
+}
+
+@media(max-width:1280px) {
+   .block5 {
+      padding: 20px;
+      justify-content: space-between; 
+   }
+
+   .block5__img {
+      width: 100%;
+      height: auto;
+      max-width: 270px;
+      padding: 20px;
+   }
+
+   .block5__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+   }
+}
+
+@media(max-width:900px) {
+   .block5 {
+      flex-direction: column;
+      align-items: center;
+   }
+   .block5__text {
+   
+   }
+   .block5__boxTextHeader {
+    padding: 15px;
+   }
+   
+   .block5__boxTextMain {
+   padding: 15px;
+   }
+   
+   .block5__boxInput {
+   padding: 15px;
+   }
+
+}
+
+@media(max-width:580px) {
+   .block5__boxInputBox {
+      width: 100%;
+      height: 48px;
+}
+
+.block5__boxTextHeader {
+   font-size: 30px;
+}
+
+/* Здесь должен быть коммент */
