@@ -4,6 +4,9 @@
     
 }
 
+/* Вставляю сюда комменты для теста */
+
+
 .logoTextHeader{
     font-weight: bold;
 }
@@ -12,7 +15,7 @@
     font-weight: 500;
     opacity: 60%;
 
-    
+
 }
 
 @media(max-width:650px) 
