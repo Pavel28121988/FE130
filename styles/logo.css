@@ -11,6 +11,8 @@
 .logoTextMain{
     font-weight: 500;
     opacity: 60%;
+
+    
 }
 
 @media(max-width:650px) 
